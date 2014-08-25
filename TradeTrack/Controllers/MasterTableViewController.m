@@ -43,6 +43,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MasterTableCell"];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ ", self.saySomething];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"... at row: %ld", indexPath.row];
+    
     return cell;
 }
 

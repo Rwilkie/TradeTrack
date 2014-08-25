@@ -38,12 +38,9 @@ DetailViewController *detailsVC;
             detailsVC = (DetailViewController *)vc;
         }
     }
-    masterVC.detailsVC = detailsVC;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (masterVC) {
+        masterVC.detailsVC = detailsVC;
+    }
 }
 
 #pragma mark - User Actions
