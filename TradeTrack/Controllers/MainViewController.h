@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  TradeTrack
 //
 //  Created by Wilkie, Rich on 8/24/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *mainTitle;
 
 @end
-

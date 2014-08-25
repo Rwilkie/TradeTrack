@@ -1,25 +1,175 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A329f" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qEU-gs-IXg">
+                                <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
+                                <items>
+                                    <barButtonItem image="settings-25" id="ouO-Lc-HKZ">
+                                        <connections>
+                                            <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" id="HEw-tR-vH0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="11" style="plain" systemItem="fixedSpace" id="c0A-MJ-pIt"/>
+                                    <barButtonItem style="plain" id="SRb-BA-XWi">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="cy6-lQ-AB9">
+                                            <rect key="frame" x="73" y="7" width="151" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Accounts"/>
+                                                <segment title="Strategies"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="masterSegmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="gTE-ah-gd8"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="XSM-g0-cdR"/>
+                                    <barButtonItem image="filter-25" id="d18-Fp-PRH">
+                                        <connections>
+                                            <action selector="filterButtonPressed:" destination="BYZ-38-t0r" id="uoD-wJ-vnz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="206" style="plain" systemItem="fixedSpace" id="vzV-KC-1SB"/>
+                                    <barButtonItem systemItem="refresh" id="Czb-C4-thw">
+                                        <connections>
+                                            <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" id="U32-u9-bjg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UhS-lj-eGc"/>
+                                    <barButtonItem image="on-off" id="Vkx-KW-igu">
+                                        <connections>
+                                            <action selector="onOffButtonPressed:" destination="BYZ-38-t0r" id="MDw-BD-3ie"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-JH-ZOR">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="8fv-Q9-ZSt"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="u5Q-oz-yPL"/>
+                                    <barButtonItem systemItem="add" id="OrI-sl-Sdw">
+                                        <connections>
+                                            <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="eKc-A0-gf4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hw-3L-S5X">
+                                <rect key="frame" x="0.0" y="64" width="306" height="660"/>
+                                <connections>
+                                    <segue destination="Gem-he-6rQ" kind="embed" id="MRM-rZ-u3k"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lW4-0M-z9H">
+                                <rect key="frame" x="304" y="64" width="720" height="660"/>
+                                <connections>
+                                    <segue destination="C8X-LT-fGD" kind="embed" id="zh1-8z-j0P"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-cC-39D">
+                                <rect key="frame" x="241" y="31" width="543" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="768" height="1024"/>
+                        <size key="landscapeSize" width="1024" height="768"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="bottomToolbar" destination="qEU-gs-IXg" id="vUO-pR-yxv"/>
+                        <outlet property="mainTitle" destination="W4j-cC-39D" id="RbP-EA-6uS"/>
+                        <outlet property="topToolbar" destination="VHf-JH-ZOR" id="N4m-cX-y6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="291" y="338"/>
+        </scene>
+        <!--Master Table View Controller-->
+        <scene sceneID="HCE-aJ-1fe">
+            <objects>
+                <tableViewController id="Gem-he-6rQ" customClass="MasterTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w98-jK-uNe">
+                        <rect key="frame" x="0.0" y="0.0" width="306" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MasterTableCell" textLabel="P2M-U5-cJp" detailTextLabel="Kvy-Ga-8Pv" style="IBUITableViewCellStyleSubtitle" id="If2-Jh-3cS">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="If2-Jh-3cS" id="cy5-UW-9cF">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2M-U5-cJp">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kvy-Ga-8Pv">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gem-he-6rQ" id="OdK-nG-EkK"/>
+                            <outlet property="delegate" destination="Gem-he-6rQ" id="3yr-BX-U0P"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rv9-Li-1XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068.5" y="31"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Fz4-2d-pP6">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="C8X-LT-fGD" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xd6-Lr-qD4"/>
+                        <viewControllerLayoutGuide type="bottom" id="c9x-n8-PS0"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dOe-k0-Fw2">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXM-Bx-117" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="776"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filter-25" width="25" height="25"/>
+        <image name="on-off" width="24" height="24"/>
+        <image name="settings-25" width="25" height="25"/>
+    </resources>
 </document>

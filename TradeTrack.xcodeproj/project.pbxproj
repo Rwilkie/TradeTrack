@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		C7179C1319AAB1040097E311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C1219AAB1040097E311 /* main.m */; };
 		C7179C1619AAB1040097E311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C1519AAB1040097E311 /* AppDelegate.m */; };
-		C7179C1919AAB1040097E311 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C1819AAB1040097E311 /* ViewController.m */; };
 		C7179C1C19AAB1040097E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7179C1A19AAB1040097E311 /* Main.storyboard */; };
 		C7179C1E19AAB1040097E311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7179C1D19AAB1040097E311 /* Images.xcassets */; };
 		C7179C2A19AAB1040097E311 /* TradeTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C2919AAB1040097E311 /* TradeTrackTests.m */; };
+		C7179C3519AAB2640097E311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3419AAB2640097E311 /* MainViewController.m */; };
+		C7179C3919AAB5540097E311 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3819AAB5540097E311 /* MasterTableViewController.m */; };
+		C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3B19AAB57E0097E311 /* DetailViewController.m */; };
+		C7179C3F19AAB7090097E311 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7179C3E19AAB7090097E311 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,18 @@
 		C7179C1219AAB1040097E311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7179C1419AAB1040097E311 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7179C1519AAB1040097E311 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7179C1719AAB1040097E311 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7179C1819AAB1040097E311 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C7179C1B19AAB1040097E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7179C1D19AAB1040097E311 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7179C2319AAB1040097E311 /* TradeTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7179C2819AAB1040097E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7179C2919AAB1040097E311 /* TradeTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeTrackTests.m; sourceTree = "<group>"; };
+		C7179C3319AAB2640097E311 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controllers/MainViewController.h; sourceTree = "<group>"; };
+		C7179C3419AAB2640097E311 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controllers/MainViewController.m; sourceTree = "<group>"; };
+		C7179C3719AAB5540097E311 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterTableViewController.h; path = Controllers/MasterTableViewController.h; sourceTree = "<group>"; };
+		C7179C3819AAB5540097E311 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterTableViewController.m; path = Controllers/MasterTableViewController.m; sourceTree = "<group>"; };
+		C7179C3A19AAB57E0097E311 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/DetailViewController.h; sourceTree = "<group>"; };
+		C7179C3B19AAB57E0097E311 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/DetailViewController.m; sourceTree = "<group>"; };
+		C7179C3E19AAB7090097E311 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +87,10 @@
 		C7179C0F19AAB1040097E311 /* TradeTrack */ = {
 			isa = PBXGroup;
 			children = (
+				C7179C3D19AAB6E50097E311 /* Views */,
 				C7179C1419AAB1040097E311 /* AppDelegate.h */,
 				C7179C1519AAB1040097E311 /* AppDelegate.m */,
-				C7179C1719AAB1040097E311 /* ViewController.h */,
-				C7179C1819AAB1040097E311 /* ViewController.m */,
-				C7179C1A19AAB1040097E311 /* Main.storyboard */,
+				C7179C3619AAB26F0097E311 /* Controllers */,
 				C7179C1D19AAB1040097E311 /* Images.xcassets */,
 				C7179C1019AAB1040097E311 /* Supporting Files */,
 			);
@@ -114,6 +121,28 @@
 				C7179C2819AAB1040097E311 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7179C3619AAB26F0097E311 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7179C3A19AAB57E0097E311 /* DetailViewController.h */,
+				C7179C3B19AAB57E0097E311 /* DetailViewController.m */,
+				C7179C3719AAB5540097E311 /* MasterTableViewController.h */,
+				C7179C3819AAB5540097E311 /* MasterTableViewController.m */,
+				C7179C3319AAB2640097E311 /* MainViewController.h */,
+				C7179C3419AAB2640097E311 /* MainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C7179C3D19AAB6E50097E311 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7179C1A19AAB1040097E311 /* Main.storyboard */,
+				C7179C3E19AAB7090097E311 /* Media.xcassets */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7179C1C19AAB1040097E311 /* Main.storyboard in Resources */,
+				C7179C3F19AAB7090097E311 /* Media.xcassets in Resources */,
 				C7179C1E19AAB1040097E311 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7179C1919AAB1040097E311 /* ViewController.m in Sources */,
+				C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */,
 				C7179C1619AAB1040097E311 /* AppDelegate.m in Sources */,
+				C7179C3919AAB5540097E311 /* MasterTableViewController.m in Sources */,
+				C7179C3519AAB2640097E311 /* MainViewController.m in Sources */,
 				C7179C1319AAB1040097E311 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TradeTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TradeTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +438,7 @@
 				C7179C2F19AAB1040097E311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7179C3019AAB1040097E311 /* Build configuration list for PBXNativeTarget "TradeTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +447,7 @@
 				C7179C3219AAB1040097E311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
