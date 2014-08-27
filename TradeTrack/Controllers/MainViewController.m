@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "MasterTableViewController.h"
 #import "DetailViewController.h"
+#import "GlobalState.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIToolbar *topToolbar;
@@ -26,6 +27,9 @@ DetailViewController *detailsVC;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Setup initial state
+    (void)[[GlobalState alloc] init];
+
     // Do any additional setup after loading the view.
     [self.mainTitle setTextColor:[UIColor whiteColor]];
     self.mainTitle.text = @"Trade Tracker";
@@ -41,6 +45,7 @@ DetailViewController *detailsVC;
     if (masterVC) {
         masterVC.detailsVC = detailsVC;
     }
+    
 }
 
 #pragma mark - User Actions
@@ -52,21 +57,21 @@ DetailViewController *detailsVC;
 }
 
 - (IBAction)refreshButtonPressed:(id)sender {
-    masterVC.saySomething = @"This is the deal dude";
-    masterVC.numberOfRows = 20;
-    [masterVC refreshMasterTable];
 }
 
 - (IBAction)onOffButtonPressed:(id)sender {
-    masterVC.saySomething = @"Gimme a break";
-    masterVC.numberOfRows = 200;
-    [masterVC refreshMasterTable];
 }
 
 - (IBAction)addButtonPressed:(id)sender {
 }
 
-- (IBAction)masterSegmentedControlChanged:(id)sender {
+- (IBAction)masterSegmentedControlChanged:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 1) {
+        [GlobalState data].sortBy = kStrategies;
+    } else {
+        [GlobalState data].sortBy = kAccounts;
+    }
+    [masterVC refreshMasterTable];
 }
 
 @end

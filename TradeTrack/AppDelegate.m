@@ -16,9 +16,11 @@
             
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
     [[UIToolbar appearance] setBackgroundImage:[UIImage imageNamed:@"menubar-7"] forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     [[UIToolbar appearance] setTintColor:[UIColor whiteColor]];
+    
     return YES;
 }
 

@@ -15,7 +15,8 @@
 		C7179C3519AAB2640097E311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3419AAB2640097E311 /* MainViewController.m */; };
 		C7179C3919AAB5540097E311 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3819AAB5540097E311 /* MasterTableViewController.m */; };
 		C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3B19AAB57E0097E311 /* DetailViewController.m */; };
-		C7179C3F19AAB7090097E311 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7179C3E19AAB7090097E311 /* Media.xcassets */; };
+		C74FAF3F19ADCCC500BAD0F6 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */; };
+		C74FAF4119ADCCF000BAD0F6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74FAF4019ADCCF000BAD0F6 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,9 @@
 		C7179C3819AAB5540097E311 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterTableViewController.m; path = Controllers/MasterTableViewController.m; sourceTree = "<group>"; };
 		C7179C3A19AAB57E0097E311 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/DetailViewController.h; sourceTree = "<group>"; };
 		C7179C3B19AAB57E0097E311 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/DetailViewController.m; sourceTree = "<group>"; };
-		C7179C3E19AAB7090097E311 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C74FAF3D19ADCCC500BAD0F6 /* GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalState.h; path = Models/GlobalState.h; sourceTree = "<group>"; };
+		C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalState.m; path = Models/GlobalState.m; sourceTree = "<group>"; };
+		C74FAF4019ADCCF000BAD0F6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Views/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +90,9 @@
 		C7179C0F19AAB1040097E311 /* TradeTrack */ = {
 			isa = PBXGroup;
 			children = (
+				C7DCC78319AB48F7007D21AD /* Models */,
 				C7179C3D19AAB6E50097E311 /* Views */,
-				C7179C1419AAB1040097E311 /* AppDelegate.h */,
-				C7179C1519AAB1040097E311 /* AppDelegate.m */,
 				C7179C3619AAB26F0097E311 /* Controllers */,
-				C7179C1D19AAB1040097E311 /* Images.xcassets */,
 				C7179C1019AAB1040097E311 /* Supporting Files */,
 			);
 			path = TradeTrack;
@@ -100,6 +101,9 @@
 		C7179C1019AAB1040097E311 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7179C1D19AAB1040097E311 /* Images.xcassets */,
+				C7179C1419AAB1040097E311 /* AppDelegate.h */,
+				C7179C1519AAB1040097E311 /* AppDelegate.m */,
 				C7179C1119AAB1040097E311 /* Info.plist */,
 				C7179C1219AAB1040097E311 /* main.m */,
 			);
@@ -139,10 +143,19 @@
 		C7179C3D19AAB6E50097E311 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C74FAF4019ADCCF000BAD0F6 /* Media.xcassets */,
 				C7179C1A19AAB1040097E311 /* Main.storyboard */,
-				C7179C3E19AAB7090097E311 /* Media.xcassets */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		C7DCC78319AB48F7007D21AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C74FAF3D19ADCCC500BAD0F6 /* GlobalState.h */,
+				C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7179C1C19AAB1040097E311 /* Main.storyboard in Resources */,
-				C7179C3F19AAB7090097E311 /* Media.xcassets in Resources */,
+				C74FAF4119ADCCF000BAD0F6 /* Media.xcassets in Resources */,
 				C7179C1E19AAB1040097E311 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +260,7 @@
 			files = (
 				C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */,
 				C7179C1619AAB1040097E311 /* AppDelegate.m in Sources */,
+				C74FAF3F19ADCCC500BAD0F6 /* GlobalState.m in Sources */,
 				C7179C3919AAB5540097E311 /* MasterTableViewController.m in Sources */,
 				C7179C3519AAB2640097E311 /* MainViewController.m in Sources */,
 				C7179C1319AAB1040097E311 /* main.m in Sources */,

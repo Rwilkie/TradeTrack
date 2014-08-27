@@ -7,6 +7,7 @@
 //
 
 #import "MasterTableViewController.h"
+#import "GlobalState.h"
 
 @interface MasterTableViewController ()
 
@@ -29,20 +30,19 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
     return self.numberOfRows;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSString *sort = ([GlobalState data].sortBy == kAccounts) ? @"Accounts" : @"Strategies";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MasterTableCell"];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ ", self.saySomething];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"... at row: %ld", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", self.saySomething, sort];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"... at row: %d", (int)indexPath.row];
     
     return cell;
 }
