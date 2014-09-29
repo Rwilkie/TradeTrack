@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MasterTableViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <masterTableVCDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *mainTitle;
 
 @end

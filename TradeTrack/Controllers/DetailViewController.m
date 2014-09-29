@@ -7,8 +7,11 @@
 //
 
 #import "DetailViewController.h"
+#import "MainViewController.h"
 
 @interface DetailViewController ()
+
+@property MainViewController *mainVC;
 
 @end
 
@@ -16,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_landscape"]]];
 }
 
 @end

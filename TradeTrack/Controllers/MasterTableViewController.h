@@ -9,13 +9,19 @@
 #import <UIKit/UIKit.h>
 
 #import "DetailViewController.h"
+#import "NewAccountViewController.h"
 
-@interface MasterTableViewController : UITableViewController
+@protocol masterTableVCDelegate <NSObject>
+
+-(void) activityAnimation: (BOOL) animate;
+
+@end
+
+@interface MasterTableViewController : UITableViewController <NewAccountDelegate>
 
 @property DetailViewController *detailsVC;
 
-@property int numberOfRows;
-@property NSString *saySomething;
+@property id <masterTableVCDelegate> delegate;
 
 -(void) refreshMasterTable;
 

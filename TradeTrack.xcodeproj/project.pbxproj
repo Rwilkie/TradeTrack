@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01AFD1757571450C9BD86333 /* libPods-TradeTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4221B493CD4448808F6E7573 /* libPods-TradeTrack.a */; };
 		C7179C1319AAB1040097E311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C1219AAB1040097E311 /* main.m */; };
 		C7179C1619AAB1040097E311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C1519AAB1040097E311 /* AppDelegate.m */; };
 		C7179C1C19AAB1040097E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7179C1A19AAB1040097E311 /* Main.storyboard */; };
@@ -17,6 +18,18 @@
 		C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7179C3B19AAB57E0097E311 /* DetailViewController.m */; };
 		C74FAF3F19ADCCC500BAD0F6 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */; };
 		C74FAF4119ADCCF000BAD0F6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74FAF4019ADCCF000BAD0F6 /* Media.xcassets */; };
+		C791AAFB19ADDDFE00BBA474 /* TradeTrack.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C791AAFA19ADDDFE00BBA474 /* TradeTrack.xcdatamodel */; };
+		C791AAFE19ADDEC500BBA474 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AAFD19ADDEC500BBA474 /* Account.m */; };
+		C791AB0119ADDEC500BBA474 /* Equity.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0019ADDEC500BBA474 /* Equity.m */; };
+		C791AB0419ADDEC500BBA474 /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0319ADDEC500BBA474 /* Trade.m */; };
+		C791AB0719ADDEC500BBA474 /* TradeTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0619ADDEC500BBA474 /* TradeTeam.m */; };
+		C791AB0A19ADDEC500BBA474 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0919ADDEC500BBA474 /* Price.m */; };
+		C791AB0D19ADDEC500BBA474 /* Strategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0C19ADDEC500BBA474 /* Strategy.m */; };
+		C791AB1019ADDEC500BBA474 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB0F19ADDEC500BBA474 /* User.m */; };
+		C791AB1319ADDEC500BBA474 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB1219ADDEC500BBA474 /* Transaction.m */; };
+		C791AB1619ADDEC500BBA474 /* Comments.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB1519ADDEC500BBA474 /* Comments.m */; };
+		C791AB1919AE478600BBA474 /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB1819AE478600BBA474 /* NewAccountViewController.m */; };
+		C791AB1C19AF369A00BBA474 /* TradesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C791AB1B19AF369A00BBA474 /* TradesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4221B493CD4448808F6E7573 /* libPods-TradeTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TradeTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F332F02A074726A9C91A09 /* Pods-TradeTrack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeTrack.xcconfig"; path = "Pods/Pods-TradeTrack.xcconfig"; sourceTree = "<group>"; };
 		C7179C0D19AAB1040097E311 /* TradeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7179C1119AAB1040097E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7179C1219AAB1040097E311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +64,30 @@
 		C74FAF3D19ADCCC500BAD0F6 /* GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalState.h; path = Models/GlobalState.h; sourceTree = "<group>"; };
 		C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalState.m; path = Models/GlobalState.m; sourceTree = "<group>"; };
 		C74FAF4019ADCCF000BAD0F6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Views/Media.xcassets; sourceTree = "<group>"; };
+		C791AAFA19ADDDFE00BBA474 /* TradeTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TradeTrack.xcdatamodel; sourceTree = "<group>"; };
+		C791AAFC19ADDEC500BBA474 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Models/Account.h; sourceTree = "<group>"; };
+		C791AAFD19ADDEC500BBA474 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Models/Account.m; sourceTree = "<group>"; };
+		C791AAFF19ADDEC500BBA474 /* Equity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Equity.h; path = Models/Equity.h; sourceTree = "<group>"; };
+		C791AB0019ADDEC500BBA474 /* Equity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Equity.m; path = Models/Equity.m; sourceTree = "<group>"; };
+		C791AB0219ADDEC500BBA474 /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trade.h; path = Models/Trade.h; sourceTree = "<group>"; };
+		C791AB0319ADDEC500BBA474 /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Trade.m; path = Models/Trade.m; sourceTree = "<group>"; };
+		C791AB0519ADDEC500BBA474 /* TradeTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TradeTeam.h; path = Models/TradeTeam.h; sourceTree = "<group>"; };
+		C791AB0619ADDEC500BBA474 /* TradeTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TradeTeam.m; path = Models/TradeTeam.m; sourceTree = "<group>"; };
+		C791AB0819ADDEC500BBA474 /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Price.h; path = Models/Price.h; sourceTree = "<group>"; };
+		C791AB0919ADDEC500BBA474 /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Price.m; path = Models/Price.m; sourceTree = "<group>"; };
+		C791AB0B19ADDEC500BBA474 /* Strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Strategy.h; path = Models/Strategy.h; sourceTree = "<group>"; };
+		C791AB0C19ADDEC500BBA474 /* Strategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Strategy.m; path = Models/Strategy.m; sourceTree = "<group>"; };
+		C791AB0E19ADDEC500BBA474 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Models/User.h; sourceTree = "<group>"; };
+		C791AB0F19ADDEC500BBA474 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Models/User.m; sourceTree = "<group>"; };
+		C791AB1119ADDEC500BBA474 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transaction.h; path = Models/Transaction.h; sourceTree = "<group>"; };
+		C791AB1219ADDEC500BBA474 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = Models/Transaction.m; sourceTree = "<group>"; };
+		C791AB1419ADDEC500BBA474 /* Comments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comments.h; path = Models/Comments.h; sourceTree = "<group>"; };
+		C791AB1519ADDEC500BBA474 /* Comments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comments.m; path = Models/Comments.m; sourceTree = "<group>"; };
+		C791AB1719AE478600BBA474 /* NewAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewAccountViewController.h; path = Controllers/NewAccountViewController.h; sourceTree = "<group>"; };
+		C791AB1819AE478600BBA474 /* NewAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewAccountViewController.m; path = Controllers/NewAccountViewController.m; sourceTree = "<group>"; };
+		C791AB1A19AF369A00BBA474 /* TradesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TradesTableViewController.h; path = Controllers/TradesTableViewController.h; sourceTree = "<group>"; };
+		C791AB1B19AF369A00BBA474 /* TradesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TradesTableViewController.m; path = Controllers/TradesTableViewController.m; sourceTree = "<group>"; };
+		C7E88C7119ADD9E600219EC5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AFD1757571450C9BD86333 /* libPods-TradeTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2505B398A04747358BFCA0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4221B493CD4448808F6E7573 /* libPods-TradeTrack.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7179C0419AAB1040097E311 = {
 			isa = PBXGroup;
 			children = (
 				C7179C0F19AAB1040097E311 /* TradeTrack */,
 				C7179C2619AAB1040097E311 /* TradeTrackTests */,
 				C7179C0E19AAB1040097E311 /* Products */,
+				47F332F02A074726A9C91A09 /* Pods-TradeTrack.xcconfig */,
+				2505B398A04747358BFCA0E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +151,7 @@
 		C7179C1019AAB1040097E311 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7E88C7119ADD9E600219EC5 /* Prefix.pch */,
 				C7179C1D19AAB1040097E311 /* Images.xcassets */,
 				C7179C1419AAB1040097E311 /* AppDelegate.h */,
 				C7179C1519AAB1040097E311 /* AppDelegate.m */,
@@ -130,6 +181,10 @@
 		C7179C3619AAB26F0097E311 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C791AB1A19AF369A00BBA474 /* TradesTableViewController.h */,
+				C791AB1B19AF369A00BBA474 /* TradesTableViewController.m */,
+				C791AB1719AE478600BBA474 /* NewAccountViewController.h */,
+				C791AB1819AE478600BBA474 /* NewAccountViewController.m */,
 				C7179C3A19AAB57E0097E311 /* DetailViewController.h */,
 				C7179C3B19AAB57E0097E311 /* DetailViewController.m */,
 				C7179C3719AAB5540097E311 /* MasterTableViewController.h */,
@@ -152,6 +207,25 @@
 		C7DCC78319AB48F7007D21AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C791AAFA19ADDDFE00BBA474 /* TradeTrack.xcdatamodel */,
+				C791AB1419ADDEC500BBA474 /* Comments.h */,
+				C791AB1519ADDEC500BBA474 /* Comments.m */,
+				C791AB1119ADDEC500BBA474 /* Transaction.h */,
+				C791AB1219ADDEC500BBA474 /* Transaction.m */,
+				C791AB0E19ADDEC500BBA474 /* User.h */,
+				C791AB0F19ADDEC500BBA474 /* User.m */,
+				C791AB0B19ADDEC500BBA474 /* Strategy.h */,
+				C791AB0C19ADDEC500BBA474 /* Strategy.m */,
+				C791AB0819ADDEC500BBA474 /* Price.h */,
+				C791AB0919ADDEC500BBA474 /* Price.m */,
+				C791AB0519ADDEC500BBA474 /* TradeTeam.h */,
+				C791AB0619ADDEC500BBA474 /* TradeTeam.m */,
+				C791AB0219ADDEC500BBA474 /* Trade.h */,
+				C791AB0319ADDEC500BBA474 /* Trade.m */,
+				C791AAFF19ADDEC500BBA474 /* Equity.h */,
+				C791AB0019ADDEC500BBA474 /* Equity.m */,
+				C791AAFC19ADDEC500BBA474 /* Account.h */,
+				C791AAFD19ADDEC500BBA474 /* Account.m */,
 				C74FAF3D19ADCCC500BAD0F6 /* GlobalState.h */,
 				C74FAF3E19ADCCC500BAD0F6 /* GlobalState.m */,
 			);
@@ -165,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7179C2D19AAB1040097E311 /* Build configuration list for PBXNativeTarget "TradeTrack" */;
 			buildPhases = (
+				EF046724DFBD45E7B80949C7 /* Check Pods Manifest.lock */,
 				C7179C0919AAB1040097E311 /* Sources */,
 				C7179C0A19AAB1040097E311 /* Frameworks */,
 				C7179C0B19AAB1040097E311 /* Resources */,
+				E3DACAB70FF143C6B4D3602C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,15 +329,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E3DACAB70FF143C6B4D3602C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TradeTrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF046724DFBD45E7B80949C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7179C0919AAB1040097E311 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C791AB1C19AF369A00BBA474 /* TradesTableViewController.m in Sources */,
 				C7179C3C19AAB57E0097E311 /* DetailViewController.m in Sources */,
+				C791AAFE19ADDEC500BBA474 /* Account.m in Sources */,
+				C791AAFB19ADDDFE00BBA474 /* TradeTrack.xcdatamodel in Sources */,
+				C791AB1319ADDEC500BBA474 /* Transaction.m in Sources */,
+				C791AB1919AE478600BBA474 /* NewAccountViewController.m in Sources */,
+				C791AB0D19ADDEC500BBA474 /* Strategy.m in Sources */,
 				C7179C1619AAB1040097E311 /* AppDelegate.m in Sources */,
+				C791AB0419ADDEC500BBA474 /* Trade.m in Sources */,
+				C791AB0719ADDEC500BBA474 /* TradeTeam.m in Sources */,
 				C74FAF3F19ADCCC500BAD0F6 /* GlobalState.m in Sources */,
+				C791AB1019ADDEC500BBA474 /* User.m in Sources */,
 				C7179C3919AAB5540097E311 /* MasterTableViewController.m in Sources */,
+				C791AB1619ADDEC500BBA474 /* Comments.m in Sources */,
+				C791AB0119ADDEC500BBA474 /* Equity.m in Sources */,
+				C791AB0A19ADDEC500BBA474 /* Price.m in Sources */,
 				C7179C3519AAB2640097E311 /* MainViewController.m in Sources */,
 				C7179C1319AAB1040097E311 /* main.m in Sources */,
 			);
@@ -377,22 +498,29 @@
 		};
 		C7179C2E19AAB1040097E311 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F332F02A074726A9C91A09 /* Pods-TradeTrack.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = TradeTrack/Prefix.pch;
 				INFOPLIST_FILE = TradeTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C7179C2F19AAB1040097E311 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F332F02A074726A9C91A09 /* Pods-TradeTrack.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = TradeTrack/Prefix.pch;
 				INFOPLIST_FILE = TradeTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
